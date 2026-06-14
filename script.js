@@ -256,3 +256,128 @@
   }
 
 }());
+
+
+
+
+
+
+
+
+
+
+const banner = document.getElementById("cookieBanner");
+const modal = document.getElementById("cookieModal");
+
+const CONSENT_KEY = "edtech_cookie_preferences";
+
+window.addEventListener("load", () => {
+
+    const consent = localStorage.getItem(CONSENT_KEY);
+
+    if(!consent){
+        setTimeout(() => {
+            banner.classList.add("show");
+        }, 800);
+    }
+
+});
+
+document
+.getElementById("acceptCookies")
+.addEventListener("click", () => {
+
+    saveConsent({
+        necessary:true,
+        analytics:true,
+        marketing:true,
+        functional:true
+    });
+
+});
+
+document
+.getElementById("rejectCookies")
+.addEventListener("click", () => {
+
+    saveConsent({
+        necessary:true,
+        analytics:false,
+        marketing:false,
+        functional:false
+    });
+
+});
+
+document
+.getElementById("customizeCookies")
+.addEventListener("click", () => {
+
+    modal.classList.add("active");
+
+});
+
+document
+.getElementById("savePreferences")
+.addEventListener("click", () => {
+
+    saveConsent({
+        necessary:true,
+        analytics:document.getElementById("analyticsCookie").checked,
+        marketing:document.getElementById("marketingCookie").checked,
+        functional:document.getElementById("functionalCookie").checked
+    });
+
+});
+
+document
+.getElementById("closeCookieBanner")
+.addEventListener("click", () => {
+
+    banner.classList.remove("show");
+
+});
+
+document
+.getElementById("closeModal")
+.addEventListener("click", () => {
+
+    modal.classList.remove("active");
+
+});
+
+function saveConsent(preferences){
+
+    localStorage.setItem(
+        CONSENT_KEY,
+        JSON.stringify(preferences)
+    );
+
+    banner.classList.remove("show");
+    modal.classList.remove("active");
+
+    console.log("Cookie Preferences Saved:", preferences);
+
+    /*
+        Load scripts here
+
+        if(preferences.analytics){
+            loadGoogleAnalytics();
+        }
+
+        if(preferences.marketing){
+            loadMetaPixel();
+        }
+    */
+
+}
+
+document
+.getElementById("openCookieSettings")
+.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    modal.classList.add("active");
+
+});
