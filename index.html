@@ -1,706 +1,1349 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Academy — Hero Section</title>
+    <link rel="stylesheet" href="style.css" class="style" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Academy — Hero Section</title>
-  <link rel="stylesheet" href="style.css" class="style" />
-</head>
-
-<body>
-  <div style="position: relative">
-    <!-- NAV -->
-    <nav>
-      <a href="#" class="nav-logo">
-    <img src="img/bg-removed-white.png" alt="Learn Depth Logo">
-</a>
-      <ul class="nav-links">
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Calendar</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About us</a></li>
-        <!-- <li><a href="#" class="active">Insights</a></li> -->
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">MyAcademy</a></li>
-      </ul>
-      <div class="nav-right">
-        <span>Contact</span>
-        <span>English | EN &#127760;</span>
-        <span>&#128722;</span>
-        <span>+91 9980855683</span>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
-      <button class="mobile-close" id="mobileClose" aria-label="Close menu">
-        &#x2715;
-      </button>
-      <a href="#">Courses</a>
-      <a href="#">Calendar</a>
-      <a href="#">Services</a>
-      <a href="#">About us</a>
-      <a href="#">Insights</a>
-      <a href="#">Blogs</a>
-      <a href="#">MyAcademy</a>
-      <a href="#">Contact</a>
-    </div>
-    <!-- HERO SLIDER -->
-    <div class="slider" id="slider">
-      <div class="slides-track" id="slidesTrack">
-        <div class="slide slide-0" role="img" aria-label="Slide 1"></div>
-        <div class="slide slide-1" role="img" aria-label="Slide 2"></div>
-        <div class="slide slide-2" role="img" aria-label="Slide 3"></div>
-      </div>
-      <div class="slide-content" id="slideContent">
-        <h1 id="slideTitle">Become Industry Ready with Real-World Learning</h1>
-        <p id="slideText">
-          Gain practical experience through internships, AI fellowship programs, mentorship, and project-based learning 
-          designed to make you job-ready from day one.
-        </p>
-      </div>
-      <button class="arrow arrow-left" id="prev" aria-label="Previous slide">
-        &#8249;
-      </button>
-      <button class="arrow arrow-right" id="next" aria-label="Next slide">
-        &#8250;
-      </button>
-      <div class="dots" id="dots" role="tablist" aria-label="Slide indicators"></div>
-    </div>
-    <!-- BOTTOM CARDS -->
-    <div class="bottom-cards">
-      <div class="card-item">
-        <h3>Develop your skills</h3>
-        <a href="#" class="card-btn">
-          Discover our courses
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M5 12h14" />
-            <path d="M13 6l6 6-6 6" />
-          </svg>
+  <body>
+    <div style="position: relative">
+      <!-- NAV -->
+      <nav>
+        <a href="#" class="nav-logo">
+          <img src="img/bg-removed-white.png" alt="Learn Depth Logo" />
         </a>
+        <ul class="nav-links">
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About us</a></li>
+          <!-- <li><a href="#" class="active">Insights</a></li> -->
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">MyAcademy</a></li>
+        </ul>
+        <div class="nav-right">
+          <span>Contact</span>
+          <span>English | EN &#127760;</span>
+          <span>&#128722;</span>
+          <span>+91 9980855683</span>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <!-- MOBILE MENU -->
+      <div
+        class="mobile-menu"
+        id="mobileMenu"
+        role="dialog"
+        aria-label="Navigation menu"
+      >
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+          &#x2715;
+        </button>
+        <a href="#">Courses</a>
+        <a href="#">Calendar</a>
+        <a href="#">Services</a>
+        <a href="#">About us</a>
+        <a href="#">Insights</a>
+        <a href="#">Blogs</a>
+        <a href="#">MyAcademy</a>
+        <a href="#">Contact</a>
       </div>
-      <div class="card-item">
-        <h3>Organizational growth</h3>
-        <a href="#" class="card-btn">
-          Discover our services
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M5 12h14" />
-            <path d="M13 6l6 6-6 6" />
-          </svg>
-        </a>
+      <!-- HERO SLIDER -->
+      <div class="slider" id="slider">
+        <div class="slides-track" id="slidesTrack">
+          <div class="slide slide-0" role="img" aria-label="Slide 1"></div>
+          <div class="slide slide-1" role="img" aria-label="Slide 2"></div>
+          <div class="slide slide-2" role="img" aria-label="Slide 3"></div>
+        </div>
+        <div class="slide-content" id="slideContent">
+          <h1 id="slideTitle">
+            Become Industry Ready with Real-World Learning
+          </h1>
+          <p id="slideText">
+            Gain practical experience through internships, AI fellowship
+            programs, mentorship, and project-based learning designed to make
+            you job-ready from day one.
+          </p>
+        </div>
+        <button class="arrow arrow-left" id="prev" aria-label="Previous slide">
+          &#8249;
+        </button>
+        <button class="arrow arrow-right" id="next" aria-label="Next slide">
+          &#8250;
+        </button>
+        <div
+          class="dots"
+          id="dots"
+          role="tablist"
+          aria-label="Slide indicators"
+        ></div>
       </div>
-    </div>
-  </div>
-  <!-- /wrapper -->
-
-  <section class="insights-section">
-    <div class="container">
-      <h2 class="section-title">The Latest From Learn Depth</h2>
-
-      <div class="insights-grid">
-        <!-- Card 1 -->
-        <div class="insight-card">
-          <div class="card-content">
-            <h3>Inside Our AI Fellowship Program: From Learning to Building</h3>
-
-            <p>
-              Discover how students work on real-world AI projects, receive mentorship from industry experts,
-               and build portfolios that demonstrate practical skills to employers.
-            </p>
-
-            <span class="tag">AI Fellowship</span>
-          </div>
-
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="" />
+      <!-- BOTTOM CARDS -->
+      <div class="bottom-cards">
+        <div class="card-item">
+          <h3>Develop your skills</h3>
+          <a href="#" class="card-btn">
+            Discover our courses
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </a>
         </div>
-
-        <!-- Card 2 -->
-        <div class="insight-card">
-          <div class="card-content">
-            <h3>How we Simulates Real Workplace Experience</h3>
-
-            <p>
-              A closer look at our mock internship model where learners collaborate in teams, solve business challenges, and
-               gain hands-on industry exposure before their first job.
-            </p>
-
-            <span class="tag">Internship Innovation</span>
-          </div>
-
-          <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800" alt="" />
-        </div>
-
-        <!-- Card 3 -->
-        <div class="insight-card">
-          <div class="card-content">
-            <h3>Are Students Truly Employable? The Skills Employers Seek Today</h3>
-
-            <p>
-              Insights from industry mentors and hiring professionals on the technical, communication,
-               and problem-solving skills required for career success.
-            </p>
-
-            <span class="tag">Career Readiness</span>
-          </div>
-
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="" />
-        </div>
-
-        <!-- Card 4 -->
-        <div class="insight-card">
-          <div class="card-content">
-            <h3>Bridging Industry and Academia Through Strategic Partnerships</h3>
-
-            <p>
-              How colleges, universities, and organizations collaborate with Learn Depth to deliver workshops, 
-              FDPs, SDPs, and industry-aligned learning experiences.
-            </p>
-
-            <span class="tag">Partnerships</span>
-          </div>
-
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="features-section">
-    <div class="features-container">
-      <h2 class="section-heading">
-        Empower Students for Tomorrow with an AI-Powered Learning Ecosystem
-      </h2>
-
-      <p class="section-description">
-        With technology evolving faster than ever, students need practical
-        skills, personalized guidance, and real-world learning experiences.
-        Our platform helps learners stay ahead through AI-powered education,
-        career readiness, and industry-aligned training.
-      </p>
-
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="icon-circle blue">🤝</div>
-
-          <h3>Learn from Experts</h3>
-
-          <p>
-            Access industry-led courses designed to build practical, job-ready
-            skills.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-circle yellow">📍</div>
-
-          <h3>Personalized Learning</h3>
-
-          <p>
-            AI-driven recommendations help students learn at their own pace
-            and career goals.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-circle blue2">🔍</div>
-
-          <h3>Real-Time Skill Analysis</h3>
-
-          <p>
-            Discover strengths, identify skill gaps, and receive personalized
-            improvement plans.
-          </p>
-        </div>
-
-        <div class="feature-card">
-          <div class="icon-circle gray">🧭</div>
-
-          <h3>Career Pathways</h3>
-
-          <p>
-            Explore career roadmaps, internships, certifications, and
-            placement opportunities.
-          </p>
+        <div class="card-item">
+          <h3>Organizational growth</h3>
+          <a href="#" class="card-btn">
+            Discover our services
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
-  </section>
+    <!-- /wrapper -->
 
-  <section class="solutions-section">
-    <div class="solutions-container">
-      <div class="solutions-header">
-        <h2 >AI Fellowship - Empower Students with AI-Driven Learning</h2><br>
+    <section class="insights-section">
+      <div class="container">
+        <h2 class="section-title">The Latest From Learn Depth</h2>
 
-        <p>
-          Building Expertise in Artificial Intelligence. Through real-world projects, industry mentorship, 
-          collaborative learning, and hands-on implementation, fellows develop the skills 
-          needed to solve modern business challenges and thrive in the AI-driven economy.
-        </p>
-      </div>
+        <div class="insights-grid">
+          <!-- Card 1 -->
+          <div class="insight-card">
+            <div class="card-content">
+              <h3>
+                Inside Our AI Fellowship Program: From Learning to Building
+              </h3>
 
-      <div class="solutions-grid">
-        <!-- Card 1 -->
+              <p>
+                Discover how students work on real-world AI projects, receive
+                mentorship from industry experts, and build portfolios that
+                demonstrate practical skills to employers.
+              </p>
 
-        <article class="solution-card">
-          <div class="solution-image">
-            <img src="img/download (18).jpg" alt="AI Learning" />
-
-            <div class="floating-box">
-              <div class="mini-card">Machine learning Training</div>
-
-              <div class="mini-card">Real-Time Projects</div>
+              <span class="tag">AI Fellowship</span>
             </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800"
+              alt=""
+            />
           </div>
 
-          <div class="solution-content">
-            <h3>Project Based Learning </h3>
+          <!-- Card 2 -->
+          <div class="insight-card">
+            <div class="card-content">
+              <h3>How we Simulates Real Workplace Experience</h3>
 
-            <p>
-              Personalized learning paths and Tutorials, doubt solving, and
-              adaptive recommendations for every student.
-              Practical understanding of Concepts by building real-world projects
-            </p>
+              <p>
+                A closer look at our mock internship model where learners
+                collaborate in teams, solve business challenges, and gain
+                hands-on industry exposure before their first job.
+              </p>
 
-            <a href="#" class="learn-link"> Learn more → </a>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-
-        <article class="solution-card">
-          <div class="solution-image">
-            <img src="img/download (19).jpg" alt="Mock Interview" />
-
-            <div class="floating-box">
-              <div class="mini-card">HR Interview Practice</div>
-
-              <div class="mini-card">Resume & Github Project Review</div>
+              <span class="tag">Internship Innovation</span>
             </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800"
+              alt=""
+            />
           </div>
 
-          <div class="solution-content">
-            <h3>Mock Interview Training to Crack ML Roles</h3>
+          <!-- Card 3 -->
+          <div class="insight-card">
+            <div class="card-content">
+              <h3>
+                Are Students Truly Employable? The Skills Employers Seek Today
+              </h3>
 
-            <p>
-              Practice technical and HR interviews with feedback, performance
-              analytics, and improvement suggestions.
-              Complete review on Projects and Github to make resume ATS Chosen
-            </p>
+              <p>
+                Insights from industry mentors and hiring professionals on the
+                technical, communication, and problem-solving skills required
+                for career success.
+              </p>
 
-            <a href="#" class="learn-link"> Learn more → </a>
+              <span class="tag">Career Readiness</span>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
+              alt=""
+            />
           </div>
-        </article>
+
+          <!-- Card 4 -->
+          <div class="insight-card">
+            <div class="card-content">
+              <h3>
+                Bridging Industry and Academia Through Strategic Partnerships
+              </h3>
+
+              <p>
+                How colleges, universities, and organizations collaborate with
+                Learn Depth to deliver workshops, FDPs, SDPs, and
+                industry-aligned learning experiences.
+              </p>
+
+              <span class="tag">Partnerships</span>
+            </div>
+
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="edu-research-showcase">
-    <div class="edu-showcase-wrap">
-      <div class="edu-primary-panel">
-        <span class="edu-panel-label"> Interview Readiness Program </span>
-
-        <h2 class="edu-panel-heading">
-          Transforming Interview Anxiety into Interview Confidence
+    <section class="features-section">
+      <div class="features-container">
+        <h2 class="section-heading">
+          Empower Students for Tomorrow with an AI-Powered Learning Ecosystem
         </h2>
 
-        <div class="edu-panel-footer">LEARN DEPTH CAREER DEVELOPMENT</div>
-      </div>
+        <p class="section-description">
+          With technology evolving faster than ever, students need practical
+          skills, personalized guidance, and real-world learning experiences.
+          Our platform helps learners stay ahead through AI-powered education,
+          career readiness, and industry-aligned training.
+        </p>
 
-      <div class="edu-visual-zone">
-        <img src="img/mock-int.png" alt="Student Learning" class="edu-visual-image" />
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-circle blue">🤝</div>
 
-        <div class="edu-floating-report">
-          <span class="edu-report-label"> Career Readiness Program</span>
+            <h3>Learn from Experts</h3>
 
-          <h3 class="edu-report-heading">
-            The 2-Stage HR Mock Interview Model Designed for Measurable Growth
-          </h3>
+            <p>
+              Access industry-led courses designed to build practical, job-ready
+              skills.
+            </p>
+          </div>
 
-          <p class="edu-report-brand">Learn Depth Employability Initiative</p>
-          <br />
-          <a href="#" class="edu-insights-button"> Explore More → </a>
+          <div class="feature-card">
+            <div class="icon-circle yellow">📍</div>
+
+            <h3>Personalized Learning</h3>
+
+            <p>
+              AI-driven recommendations help students learn at their own pace
+              and career goals.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-circle blue2">🔍</div>
+
+            <h3>Real-Time Skill Analysis</h3>
+
+            <p>
+              Discover strengths, identify skill gaps, and receive personalized
+              improvement plans.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-circle gray">🧭</div>
+
+            <h3>Career Pathways</h3>
+
+            <p>
+              Explore career roadmaps, internships, certifications, and
+              placement opportunities.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<section class="lp-programs-section">
+    <section class="solutions-section">
+      <div class="solutions-container">
+        <div class="solutions-header">
+          <h2>AI Fellowship - Empower Students with AI-Driven Learning</h2>
+          <br />
 
-    <h2 class="lp-program-heading" style="text-align:center">
+          <p>
+            Building Expertise in Artificial Intelligence. Through real-world
+            projects, industry mentorship, collaborative learning, and hands-on
+            implementation, fellows develop the skills needed to solve modern
+            business challenges and thrive in the AI-driven economy.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Card 1 -->
+
+          <article class="solution-card">
+            <div class="solution-image">
+              <img src="img/download (18).jpg" alt="AI Learning" />
+
+              <div class="floating-box">
+                <div class="mini-card">Machine learning Training</div>
+
+                <div class="mini-card">Real-Time Projects</div>
+              </div>
+            </div>
+
+            <div class="solution-content">
+              <h3>Project Based Learning</h3>
+
+              <p>
+                Personalized learning paths and Tutorials, doubt solving, and
+                adaptive recommendations for every student. Practical
+                understanding of Concepts by building real-world projects
+              </p>
+
+              <a href="#" class="learn-link"> Learn more → </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+
+          <article class="solution-card">
+            <div class="solution-image">
+              <img src="img/download (19).jpg" alt="Mock Interview" />
+
+              <div class="floating-box">
+                <div class="mini-card">HR Interview Practice</div>
+
+                <div class="mini-card">Resume & Github Project Review</div>
+              </div>
+            </div>
+
+            <div class="solution-content">
+              <h3>Mock Interview Training to Crack ML Roles</h3>
+
+              <p>
+                Practice technical and HR interviews with feedback, performance
+                analytics, and improvement suggestions. Complete review on
+                Projects and Github to make resume ATS Chosen
+              </p>
+
+              <a href="#" class="learn-link"> Learn more → </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="edu-research-showcase">
+      <div class="edu-showcase-wrap">
+        <div class="edu-primary-panel">
+          <span class="edu-panel-label"> Interview Readiness Program </span>
+
+          <h2 class="edu-panel-heading">
+            Transforming Interview Anxiety into Interview Confidence
+          </h2>
+
+          <div class="edu-panel-footer">LEARN DEPTH CAREER DEVELOPMENT</div>
+        </div>
+
+        <div class="edu-visual-zone">
+          <img
+            src="img/mock-int.png"
+            alt="Student Learning"
+            class="edu-visual-image"
+          />
+
+          <div class="edu-floating-report">
+            <span class="edu-report-label"> Career Readiness Program</span>
+
+            <h3 class="edu-report-heading">
+              The 2-Stage HR Mock Interview Model Designed for Measurable Growth
+            </h3>
+
+            <p class="edu-report-brand">Learn Depth Employability Initiative</p>
+            <br />
+            <a href="#" class="edu-insights-button"> Explore More → </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-programs-section">
+      <h2 class="lp-program-heading" style="text-align: center">
         Explore Our Internship Programs Globally
-    </h2><br><br>
+      </h2>
+      <br /><br />
 
-    <div class="lp-programs-slider">
-
+      <div class="lp-programs-slider">
         <button class="lp-arrow lp-prev">&#10094;</button>
 
         <div class="lp-slider-window">
+          <div class="lp-slider-track">
+            <!-- Data Science -->
 
-            <div class="lp-slider-track">
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/datasci.png" alt="Data Science" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Data Science -->
+              <div class="lp-course-content">
+                <h3>Data Science Internship Program</h3>
+                <p>
+                  Learn data analysis, visualization, statistics, and predictive
+                  modeling while working on real-world datasets and business
+                  problems.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/datasci.png" alt="Data Science">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Data Science Internship Program</h3>
-                        <p>
-                            Learn data analysis, visualization, statistics, and predictive
-                            modeling while working on real-world datasets and business problems.
-                        </p>
-                    </div>
+            <!-- Machine Learning -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/ml.png" alt="Machine Learning" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Machine Learning -->
+              <div class="lp-course-content">
+                <h3>Machine Learning Internship Program</h3>
+                <p>
+                  Build intelligent systems using machine learning algorithms,
+                  model training techniques, and AI-powered applications.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/ml.png" alt="Machine Learning">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Machine Learning Internship Program</h3>
-                        <p>
-                            Build intelligent systems using machine learning algorithms,
-                            model training techniques, and AI-powered applications.
-                        </p>
-                    </div>
+            <!-- Web Development -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/web.png" alt="Web Development" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Web Development -->
+              <div class="lp-course-content">
+                <h3>Web Development Internship Program</h3>
+                <p>
+                  Develop responsive websites and modern web applications while
+                  learning industry-standard frontend and backend technologies.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/web.png" alt="Web Development">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Web Development Internship Program</h3>
-                        <p>
-                            Develop responsive websites and modern web applications while
-                            learning industry-standard frontend and backend technologies.
-                        </p>
-                    </div>
+            <!-- Android -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/and_app.png" alt="Android Development" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Android -->
+              <div class="lp-course-content">
+                <h3>Android App Development Internship Program</h3>
+                <p>
+                  Design and build mobile applications that deliver engaging
+                  user experiences and solve real-world challenges.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/and_app.png" alt="Android Development">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Android App Development Internship Program</h3>
-                        <p>
-                            Design and build mobile applications that deliver engaging user
-                            experiences and solve real-world challenges.
-                        </p>
-                    </div>
+            <!-- Java -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/java.png" alt="Java Development" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Java -->
+              <div class="lp-course-content">
+                <h3>Java Development Internship Program</h3>
+                <p>
+                  Master object-oriented programming and enterprise application
+                  development using Java and modern development frameworks.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/java.png" alt="Java Development">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Java Development Internship Program</h3>
-                        <p>
-                            Master object-oriented programming and enterprise application
-                            development using Java and modern development frameworks.
-                        </p>
-                    </div>
+            <!-- Python -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/python.png" alt="Python Development" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Python -->
+              <div class="lp-course-content">
+                <h3>Python Development Internship Program</h3>
+                <p>
+                  Build automation tools, backend applications, and intelligent
+                  solutions using one of the world's most versatile programming
+                  languages.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/python.png" alt="Python Development">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Python Development Internship Program</h3>
-                        <p>
-                            Build automation tools, backend applications, and intelligent
-                            solutions using one of the world's most versatile programming languages.
-                        </p>
-                    </div>
+            <!-- Sales & Marketing -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/sale_mar.png" alt="Sales & Marketing" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Sales & Marketing -->
+              <div class="lp-course-content">
+                <h3>Sales & Marketing Internship Program</h3>
+                <p>
+                  Gain practical exposure to modern sales techniques, digital
+                  marketing strategies, lead generation and customer engagement.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/sale_mar.png" alt="Sales & Marketing">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
 
-                    <div class="lp-course-content">
-                        <h3>Sales & Marketing Internship Program</h3>
-                        <p>
-                            Gain practical exposure to modern sales techniques,
-                            digital marketing strategies, lead generation and customer engagement.
-                        </p>
-                    </div>
+            <!-- Content Strategy -->
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+            <div class="lp-course-card">
+              <div class="lp-course-image">
+                <img src="img/content.png" alt="Content Strategy" />
+                <div class="lp-badge">◆</div>
+              </div>
 
-                <!-- Content Strategy -->
+              <div class="lp-course-content">
+                <h3>Content Strategy Internship Program</h3>
+                <p>
+                  Learn how to create impactful content, develop content
+                  calendars, optimize engagement, and build strong brand
+                  communication strategies.
+                </p>
+              </div>
 
-                <div class="lp-course-card">
-                    <div class="lp-course-image">
-                        <img src="img/content.png" alt="Content Strategy">
-                        <div class="lp-badge">◆</div>
-                    </div>
+              <div class="lp-course-footer">
+                <a
+                  href="course-details.html"
+                  style="
+                    display: block;
+                    width: 100%;
+                    max-width: 200px;
+                    margin: 25px auto 0;
+                    padding: 12px 20px;
+                    background: #373de9;
+                    color: #fff;
+                    text-decoration: none;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                  "
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <div class="lp-course-content">
-                        <h3>Content Strategy Internship Program</h3>
-                        <p>
-                            Learn how to create impactful content, develop content calendars,
-                            optimize engagement, and build strong brand communication strategies.
-                        </p>
-                    </div>
+        <button class="lp-arrow lp-next">&#10095;</button>
+      </div>
+    </section>
 
-                    <div class="lp-course-footer">
-                        <a href="course-details.html" style="display:block;width:100%;max-width:200px;margin:25px auto 0;padding:12px 20px;background:#373de9;color:#fff;text-decoration:none;text-align:center;border-radius:30px;font-size:14px;font-weight:700;box-sizing:border-box;">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
+    <section class="ld-trust-section">
+
+    <div class="ld-trust-container">
+
+        <p class="ld-trust-label">
+            Trusted by Industry Partners
+        </p>
+
+        <!-- LOGO SLIDER -->
+
+        <div class="ld-logo-slider">
+
+            <div class="ld-logo-track">
+
+                <!-- Set 1 -->
+
+                <img src="img/ecom_bharat_ai_logo-removebg-preview.png" alt="">
+                <img src="img/getcodefree.png" alt="">
+                <img src="img/craftedge.png" alt="">
+                <img src="img/threiveit.png" alt="">
+                <img src="img/webelite.png" alt="">
+                <img src="img/codezania.png" alt="">
+                
+
+                <!-- Duplicate for infinite loop -->
+
+                <img src="img/ecom_bharat_ai_logo-removebg-preview.png" alt="">
+                <img src="img/getcodefree.png" alt="">
+                <img src="img/craftedge.png" alt="">
+                <img src="img/threiveit.png" alt="">
+                <img src="img/webelite.png" alt="">
+                <img src="img/codezania.png" alt="">
 
             </div>
 
         </div>
 
-        <button class="lp-arrow lp-next">&#10095;</button>
+        <!-- STATS -->
+
+        <div class="ld-stats-box">
+
+            <div class="ld-stat-item">
+
+                <h3>700+</h3>
+
+                <p>
+                    Students trained across multiple programs
+                </p>
+
+            </div>
+
+            <div class="ld-stat-item">
+
+                <h3>500+</h3>
+
+                <p>
+                    Real-world projects completed
+                </p>
+
+            </div>
+
+            <div class="ld-stat-item">
+
+                <h3>20+</h3>
+
+                <p>
+                    Industry mentors and experts
+                </p>
+
+            </div>
+
+            <div class="ld-stat-item">
+
+                <h3>85%</h3>
+
+                <p>
+                    Learners reported improved employability
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
-  <script>
-    (function () {
-      var slides = [
-        {
-          title: "Ready to grow and make real impact?",
-          text: "Gain practical experience through internships, AI fellowship programs, mentorship, and project-based learning designed to make you job-ready from day one.",
-        },
-        {
-          title: "Experience the Workplace Before Your First Job",
-          text: "We simulates a complete internship environment where students work on real projects, collaborate in teams, receive feedback, and build professional confidence.",
-        },
-        {
-          title: "Bridging the Gap Between Education and Industry",
-          text: "Through workshops, FDPs, SDPs, corporate training, and industry-academia partnerships, we help institutions and learners stay aligned with evolving industry demands.",
-        },
-      ];
+    <section class="ld-solutions-section">
+      <div class="ld-solutions-container">
+        <h2 class="ld-solutions-title">
+          Empowering Careers Through Industry-Ready Learning
+        </h2>
 
-      var cur = 0,
-        n = slides.length,
-        timer;
-      var track = document.getElementById("slidesTrack");
-      var titleEl = document.getElementById("slideTitle");
-      var textEl = document.getElementById("slideText");
-      var contentEl = document.getElementById("slideContent");
-      var dotsEl = document.getElementById("dots");
+        <div class="ld-solutions-grid">
+          <!-- CARD 1 -->
 
-      // Build dots
-      slides.forEach(function (_, i) {
-        var d = document.createElement("button");
-        d.className = "dot" + (i === 0 ? " active" : "");
-        d.setAttribute("aria-label", "Go to slide " + (i + 1));
-        d.setAttribute("role", "tab");
-        d.onclick = function () {
-          goTo(i);
-        };
-        dotsEl.appendChild(d);
-      });
+          <div class="ld-solution-card">
+            <div class="ld-card-image">
+              <img src="img/stu.png" alt="" />
+            </div>
 
-      function updateDots() {
-        dotsEl.querySelectorAll(".dot").forEach(function (d, i) {
-          d.classList.toggle("active", i === cur);
-          d.setAttribute("aria-selected", i === cur ? "true" : "false");
+            <div class="ld-card-content">
+              <h3>For Individuals</h3>
+
+              <p>
+                Accelerate your career through internships, AI fellowships, mentorship, mock interviews, skill assessments, 
+                and industry-focused learning experiences designed to make you job-ready.
+              </p>
+
+              <a href="#" class="ld-arrow-btn"> → </a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+
+          <div class="ld-solution-card">
+            <div class="ld-card-image">
+              <img src="img/institutes.png" alt="" />
+            </div>
+
+            <div class="ld-card-content">
+              <h3>For Educational Institutions</h3>
+
+              <p>
+                Partner with Learn Depth to deliver workshops, FDPs, SDP programs, placement readiness initiatives,
+                 industry projects, and career-focused learning experiences for students.
+              </p>
+
+              <a href="#" class="ld-arrow-btn"> → </a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+
+          <div class="ld-solution-card">
+            <div class="ld-card-image">
+              <img src="img/corporate.png" alt="" />
+            </div>
+
+            <div class="ld-card-content">
+              <h3>For Corporates</h3>
+
+              <p>
+                Build future-ready teams through corporate training, workforce upskilling, AI programs, leadership development, 
+                internship partnerships, and talent pipeline solutions.
+              </p>
+
+              <a href="#" class="ld-arrow-btn"> → </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ld-impact-section">
+      <div class="ld-impact-header">
+        <h2 class="ld-impact-title">
+          Why Companies Hire Learn Depth Talent.
+        </h2>
+
+        <p class="ld-impact-subtitle">
+         Our industry-driven learning model develops job-ready professionals through real-world projects, 
+         internships, mentorship, and practical skill validation—helping employers hire with confidence.
+        </p>
+      </div>
+
+      <div class="ld-impact-card">
+        <!-- LEFT -->
+
+        <div class="ld-impact-content">
+          <div class="ld-impact-tag">
+            <span class="ld-tag-icon">▣</span>
+
+            <span>Hire Skilled Ones, Save Training Cost and Time</span>
+          </div>
+
+          <h3>Industry-Ready Skills From Day One</h3>
+
+          <p>
+            Students at Learn Depth don't just learn concepts—they apply them through 
+            real-world projects, mock interviews, internships, and mentor-guided experiences. 
+            This practical exposure helps employers onboard talent faster and reduce training time.
+          </p>
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="ld-impact-image-wrapper">
+          <img
+            src="img/hirefromus.png"
+            alt="Learn Depth Student"
+            class="ld-impact-image"
+          />
+
+          <div class="ld-floating-card">
+            <span class="ld-floating-number"> 500+
+ </span>
+
+            <span class="ld-floating-text">
+              Students trained through project-based learning experiences.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ld-highlights-section">
+      <div class="ld-highlights-container">
+        <h2 class="ld-highlights-title">Latest Highlights</h2>
+
+        <div class="ld-highlights-grid">
+          <!-- LEFT COLUMN -->
+
+          <div class="ld-left-column">
+            <div class="ld-small-card">
+              <img src="images/report1.jpg" alt="" />
+
+              <div class="ld-card-body">
+                <span class="ld-tag"> Research </span>
+
+                <h3>AI Fellowship Program Impact Report</h3>
+
+                <span class="ld-type"> Research Report </span>
+              </div>
+            </div>
+
+            <div class="ld-small-card">
+              <img src="images/report2.jpg" alt="" />
+
+              <div class="ld-card-body">
+                <span class="ld-tag"> AI & Learning </span>
+
+                <h3>The Future of Career Development with AI</h3>
+
+                <span class="ld-type"> Insights </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER FEATURED -->
+
+          <div class="ld-feature-card">
+            <img src="images/featured.jpg" alt="" />
+
+            <div class="ld-feature-content">
+              <span class="ld-tag"> AI Fellowship </span>
+
+              <h3>
+                Building Industry-Ready Talent Through Project-Based Learning
+              </h3>
+
+              <p>
+                Discover how Learn Depth is helping students bridge the gap
+                between academic learning and real-world careers.
+              </p>
+
+              <span class="ld-type"> Featured Story </span>
+            </div>
+          </div>
+
+          <!-- RIGHT NEWS -->
+
+          <div class="ld-news-column">
+            <div class="ld-news-card">
+              <span class="ld-news-date"> June 2026 </span>
+
+              <h4>Learn Depth launches AI Fellowship Cohort 2026</h4>
+
+              <a href="#"> Learn more → </a>
+            </div>
+
+            <div class="ld-news-card">
+              <span class="ld-news-date"> May 2026 </span>
+
+              <h4>New internship opportunities announced</h4>
+
+              <a href="#"> Learn more → </a>
+            </div>
+
+            <div class="ld-news-card">
+              <span class="ld-news-date"> April 2026 </span>
+
+              <h4>2-Stage HR Mock Interview Program expands</h4>
+
+              <a href="#"> Learn more → </a>
+            </div>
+
+            <div class="ld-news-card">
+              <span class="ld-news-date"> March 2026 </span>
+
+              <h4>Industry partnership network crosses 100 mentors</h4>
+
+              <a href="#"> Learn more → </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ld-career-showcase">
+      <div class="ld-career-wrapper">
+        <!-- TOP CONTENT -->
+
+        <div class="ld-career-header">
+          <h2>Supercharge Your Career With Learn Depth</h2>
+
+          <p>
+          
+          </p>
+        </div>
+
+        <!-- IMAGE LAYOUT -->
+
+        <div class="ld-career-grid">
+          <!-- LEFT -->
+
+          <div class="ld-tall-card">
+            <img src="img/car-stu.png" alt="" />
+          </div>
+
+          <!-- CENTER -->
+
+          <div class="ld-center-column">
+            <div class="ld-small-card">
+              <img src="img/car-group.png" alt="" />
+            </div>
+
+            <div class="ld-small-card">
+              <img src="img/car-workprofessional.png" alt="" />
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="ld-tall-card">
+            <img src="img/car-hr.png" alt="" />
+          </div>
+        </div>
+
+        <!-- BOTTOM CTA -->
+
+        <div class="ld-career-footer">
+          <h3>Find Your Future With Learn Depth</h3>
+
+          <a href="#"> Explore Careers ↗ </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ld-corp-footer">
+      <div class="ld-footer-wrap">
+        <h2 class="ld-footer-title">Let's connect</h2>
+
+        <div class="ld-footer-grid">
+          <!-- COLUMN 1 -->
+
+          <div class="ld-footer-col">
+            <a href="#">Contact Us</a>
+
+            <a href="#">Explore Programs</a>
+
+            <a href="#">Become a Mentor</a>
+
+            <a href="#">Partner With Us</a>
+          </div>
+
+          <!-- COLUMN 2 -->
+
+          <div class="ld-footer-col">
+            <h4>Programs</h4>
+
+            <a href="#">Data Science</a>
+
+            <a href="#">Machine Learning</a>
+
+            <a href="#">Web Development</a>
+
+            <a href="#">Android Development</a>
+
+            <a href="#">Java Development</a>
+
+            <a href="#">Python Development</a>
+
+            <a href="#">Content Strategy</a>
+
+            <a href="#">Sales & Marketing</a>
+          </div>
+
+          <!-- COLUMN 3 -->
+
+          <div class="ld-footer-col">
+            <h4>Solutions</h4>
+
+            <a href="#">AI Fellowship</a>
+
+            <a href="#">Internships</a>
+
+            <a href="#">Corporate Training</a>
+
+            <a href="#">FDP Programs</a>
+
+            <a href="#">SDP Programs</a>
+
+            <a href="#">CrackIT</a>
+
+            <a href="#">Mock Interviews</a>
+          </div>
+
+          <!-- COLUMN 4 -->
+
+          <div class="ld-footer-col">
+            <h4>About Learn Depth</h4>
+
+            <a href="#">About Us</a>
+
+            <a href="#">Research Reports</a>
+
+            <a href="#">Events</a>
+
+            <a href="#">Industry Partnerships</a>
+
+            <a href="#">Success Stories</a>
+          </div>
+
+          <!-- COLUMN 5 -->
+
+          <div class="ld-footer-col">
+            <h4>Careers</h4>
+
+            <a href="#">Join Our Team</a>
+
+            <a href="#">Open Positions</a>
+
+            <a href="#">Campus Ambassadors</a>
+
+            <a href="#">Intern Opportunities</a>
+          </div>
+        </div>
+
+        <div class="ld-footer-bottom">
+          <div class="ld-copyright">
+            © 2026 Learn Depth. All rights reserved.
+          </div>
+
+          <div class="ld-socials">
+            <a href="#">LinkedIn</a>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">YouTube</a>
+
+            <a href="#">X</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var slides = [
+          {
+            title: "Ready to grow and make real impact?",
+            text: "Gain practical experience through internships, AI fellowship programs, mentorship, and project-based learning designed to make you job-ready from day one.",
+          },
+          {
+            title: "Experience the Workplace Before Your First Job",
+            text: "We simulates a complete internship environment where students work on real projects, collaborate in teams, receive feedback, and build professional confidence.",
+          },
+          {
+            title: "Bridging the Gap Between Education and Industry",
+            text: "Through workshops, FDPs, SDPs, corporate training, and industry-academia partnerships, we help institutions and learners stay aligned with evolving industry demands.",
+          },
+        ];
+
+        var cur = 0,
+          n = slides.length,
+          timer;
+        var track = document.getElementById("slidesTrack");
+        var titleEl = document.getElementById("slideTitle");
+        var textEl = document.getElementById("slideText");
+        var contentEl = document.getElementById("slideContent");
+        var dotsEl = document.getElementById("dots");
+
+        // Build dots
+        slides.forEach(function (_, i) {
+          var d = document.createElement("button");
+          d.className = "dot" + (i === 0 ? " active" : "");
+          d.setAttribute("aria-label", "Go to slide " + (i + 1));
+          d.setAttribute("role", "tab");
+          d.onclick = function () {
+            goTo(i);
+          };
+          dotsEl.appendChild(d);
         });
-      }
 
-      function updateContent() {
-        contentEl.classList.add("fade-out");
-        setTimeout(function () {
-          titleEl.textContent = slides[cur].title;
-          textEl.textContent = slides[cur].text;
-          contentEl.classList.remove("fade-out");
-        }, 320);
-      }
+        function updateDots() {
+          dotsEl.querySelectorAll(".dot").forEach(function (d, i) {
+            d.classList.toggle("active", i === cur);
+            d.setAttribute("aria-selected", i === cur ? "true" : "false");
+          });
+        }
 
-      function goTo(idx) {
-        cur = ((idx % n) + n) % n;
-        track.style.transform = "translateX(-" + cur * 100 + "%)";
-        updateDots();
-        updateContent();
-        resetTimer();
-      }
+        function updateContent() {
+          contentEl.classList.add("fade-out");
+          setTimeout(function () {
+            titleEl.textContent = slides[cur].title;
+            textEl.textContent = slides[cur].text;
+            contentEl.classList.remove("fade-out");
+          }, 320);
+        }
 
-      function resetTimer() {
-        clearInterval(timer);
-        timer = setInterval(function () {
+        function goTo(idx) {
+          cur = ((idx % n) + n) % n;
+          track.style.transform = "translateX(-" + cur * 100 + "%)";
+          updateDots();
+          updateContent();
+          resetTimer();
+        }
+
+        function resetTimer() {
+          clearInterval(timer);
+          timer = setInterval(function () {
+            goTo(cur + 1);
+          }, 4800);
+        }
+
+        document.getElementById("prev").onclick = function () {
+          goTo(cur - 1);
+        };
+        document.getElementById("next").onclick = function () {
           goTo(cur + 1);
-        }, 4800);
+        };
+        resetTimer();
+
+        // Mobile menu
+        document.getElementById("navToggle").onclick = function () {
+          document.getElementById("mobileMenu").classList.add("open");
+          document.body.style.overflow = "hidden";
+        };
+        document.getElementById("mobileClose").onclick = function () {
+          document.getElementById("mobileMenu").classList.remove("open");
+          document.body.style.overflow = "";
+        };
+
+        // Touch swipe
+        var startX = 0;
+        var sl = document.getElementById("slider");
+        sl.addEventListener(
+          "touchstart",
+          function (e) {
+            startX = e.touches[0].clientX;
+          },
+          { passive: true },
+        );
+        sl.addEventListener(
+          "touchend",
+          function (e) {
+            var dx = e.changedTouches[0].clientX - startX;
+            if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
+          },
+          { passive: true },
+        );
+
+        // Keyboard arrow support
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "ArrowLeft") goTo(cur - 1);
+          if (e.key === "ArrowRight") goTo(cur + 1);
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+    <script>
+      const track = document.querySelector(".lp-slider-track");
+      const cards = document.querySelectorAll(".lp-course-card");
+
+      const nextBtn = document.querySelector(".lp-next");
+      const prevBtn = document.querySelector(".lp-prev");
+
+      let index = 0;
+
+      function cardWidth() {
+        return cards[0].offsetWidth + 30;
       }
 
-      document.getElementById("prev").onclick = function () {
-        goTo(cur - 1);
-      };
-      document.getElementById("next").onclick = function () {
-        goTo(cur + 1);
-      };
-      resetTimer();
+      function moveSlider() {
+        track.style.transform = `translateX(-${index * cardWidth()}px)`;
+      }
 
-      // Mobile menu
-      document.getElementById("navToggle").onclick = function () {
-        document.getElementById("mobileMenu").classList.add("open");
-        document.body.style.overflow = "hidden";
-      };
-      document.getElementById("mobileClose").onclick = function () {
-        document.getElementById("mobileMenu").classList.remove("open");
-        document.body.style.overflow = "";
-      };
+      nextBtn.addEventListener("click", () => {
+        if (index < cards.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
 
-      // Touch swipe
-      var startX = 0;
-      var sl = document.getElementById("slider");
-      sl.addEventListener(
-        "touchstart",
-        function (e) {
-          startX = e.touches[0].clientX;
-        },
-        { passive: true },
-      );
-      sl.addEventListener(
-        "touchend",
-        function (e) {
-          var dx = e.changedTouches[0].clientX - startX;
-          if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1);
-        },
-        { passive: true },
-      );
-
-      // Keyboard arrow support
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "ArrowLeft") goTo(cur - 1);
-        if (e.key === "ArrowRight") goTo(cur + 1);
+        moveSlider();
       });
-    })();
-  </script>
-  <script src="script.js"></script>
-  <script>
-    const track = document.querySelector(".lp-slider-track");
-    const cards = document.querySelectorAll(".lp-course-card");
 
-    const nextBtn = document.querySelector(".lp-next");
-    const prevBtn = document.querySelector(".lp-prev");
+      prevBtn.addEventListener("click", () => {
+        if (index > 0) {
+          index--;
+        } else {
+          index = cards.length - 1;
+        }
 
-    let index = 0;
+        moveSlider();
+      });
 
-    function cardWidth() {
-      return cards[0].offsetWidth + 30;
-    }
+      window.addEventListener("resize", moveSlider);
 
-    function moveSlider() {
-      track.style.transform = `translateX(-${index * cardWidth()}px)`;
-    }
+      /* Auto Slide */
 
-    nextBtn.addEventListener("click", () => {
-      if (index < cards.length - 1) {
-        index++;
-      } else {
-        index = 0;
-      }
+      setInterval(() => {
+        if (index < cards.length - 1) {
+          index++;
+        } else {
+          index = 0;
+        }
 
-      moveSlider();
-    });
-
-    prevBtn.addEventListener("click", () => {
-      if (index > 0) {
-        index--;
-      } else {
-        index = cards.length - 1;
-      }
-
-      moveSlider();
-    });
-
-    window.addEventListener("resize", moveSlider);
-
-    /* Auto Slide */
-
-    setInterval(() => {
-      if (index < cards.length - 1) {
-        index++;
-      } else {
-        index = 0;
-      }
-
-      moveSlider();
-    }, 4000);
-  </script>
-</body>
-
+        moveSlider();
+      }, 4000);
+    </script>
+  </body>
 </html>
